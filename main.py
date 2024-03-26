@@ -9,7 +9,7 @@ from selenium.webdriver.chrome.service import Service
 
 
 
-IAM_Username="H-09"
+IAM_Username="D09"
 IAM_Password='password'
 Player_Username='aa@zzz.com'
 Player_Password='password'
@@ -35,7 +35,7 @@ def exceptionforfeedback(driver):
     except Exception as e:
         print(str(e))
 
-def evaluate_hsbc(count):
+def evaluate_deepracer(count):
 
     iamid = ACCOUNT_ID
     options = Options()
@@ -74,8 +74,8 @@ def evaluate_hsbc(count):
     submit.click()
 
     time.sleep(sleeptime)
-    # modelpage = 'https://us-east-1.console.aws.amazon.com/deepracer/home?region=us-east-1#model/074e5c31-9bec-4e57-a908-3b089265bd81'
-    modelpage = 'https://us-east-1.console.aws.amazon.com/deepracer/home?region=us-east-1#model/47ccaf07-d8f9-4564-8d47-c25acc0b4c2a'
+   
+    modelpage = 'https://us-east-1.console.aws.amazon.com/deepracer/home?region=us-east-1#model/modelid'
     driver.get(modelpage)
 
     time.sleep(sleeptime)
@@ -138,7 +138,7 @@ def evaluate_hsbc(count):
 if __name__ == "__main__":
 
     for step in range(1,100):
-        evaluate_hsbc(step)
+        evaluate_deepracer(step)
         time.sleep(Run_Period * 60)
         current = time.ctime()
         print(f"{current} starting evaluate at {step} times...")
