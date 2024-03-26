@@ -13,7 +13,7 @@ IAM_Username="H-09"
 IAM_Password='password'
 Player_Username='aa@zzz.com'
 Player_Password='password'
-ACCOUNT_ID=318512209165
+ACCOUNT_ID=3333333333333
 
 
 # this is your chrome exe file path, it is only for automation test purpose
