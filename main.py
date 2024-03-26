@@ -74,7 +74,7 @@ def evaluate_deepracer(count):
     submit.click()
 
     time.sleep(sleeptime)
-   
+    #your model link in deepracer
     modelpage = 'https://us-east-1.console.aws.amazon.com/deepracer/home?region=us-east-1#model/modelid'
     driver.get(modelpage)
 
